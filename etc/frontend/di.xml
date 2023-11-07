@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Search\Model\Autocomplete">
+        <arguments>
+            <argument name="dataProviders" xsi:type="array">
+                <item name="20" xsi:type="object">ProxiBlue\AutocompleteBestsellers\Model\Autocomplete\Product\DataProvider</item>
+                <item name="30" xsi:type="object">Smile\ElasticsuiteCatalog\Model\Autocomplete\Product\Attribute\DataProvider</item>
+                <item name="40" xsi:type="object">Smile\ElasticsuiteCatalog\Model\Autocomplete\Category\DataProvider</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <type name="ProxiBlue\AutocompleteBestsellers\Model\Autocomplete\Product\Collection\Provider" shared="true">
+        <arguments>
+            <argument name="collection" xsi:type="object">ProxiBlue\AutocompleteBestsellers\Model\Autocomplete\Product\Collection</argument>
+            <argument name="collectionProcessors" xsi:type="array">
+                <item name="filters" xsi:type="object">Smile\ElasticsuiteCatalog\Model\Autocomplete\Product\Collection\Filter</item>
+                <item name="attributeSelect" xsi:type="object">Smile\ElasticsuiteCatalog\Model\Autocomplete\Product\Collection\AttributeSelector</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <virtualType name="ProxiBlue\AutocompleteBestsellers\Model\Autocomplete\Product\Collection" type="ProxiBlue\AutocompleteBestsellers\Model\ResourceModel\Product\Fulltext\Collection">
+        <arguments>
+            <argument name="searchRequestName" xsi:type="string">catalog_product_autocomplete</argument>
+        </arguments>
+    </virtualType>
+
+</config>

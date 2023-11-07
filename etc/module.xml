@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="ProxiBlue_AutocompleteBestsellers">
+        <sequence>
+            <module name="Smile_ElasticsuiteCatalog"/>
+            <module name="RedChamps_ExtraSortingOptions"/>
+        </sequence>
+    </module>
+</config>
