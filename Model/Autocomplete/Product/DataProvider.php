@@ -1,18 +1,13 @@
 <?php
 
-/*
- * (c) Lucas van Staden <sales@proxiblue.com.au>
- *
- * This source file is subject to the MIT license that is bundled
- * with this source code in the file LICENSE.
- */
-
 /**
  * DISCLAIMER
  *
  * Do not edit or add to this file if you wish to upgrade Smile ElasticSuite to newer
  * versions in the future.
  *
+ * Adjusted to allow usage of diffrent collection to effect sorting changes. 
+ * 
  * @category  Smile
  * @package   Smile\ElasticsuiteCatalog
  * @author    Aurelien FOUCRET <aurelien.foucret@smile.fr>
