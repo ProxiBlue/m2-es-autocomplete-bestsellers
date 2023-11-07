@@ -7,6 +7,19 @@
  * with this source code in the file LICENSE.
  */
 
+/**
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Smile ElasticSuite to newer
+ * versions in the future.
+ *
+ * @category  Smile
+ * @package   Smile\ElasticsuiteCatalog
+ * @author    Aurelien FOUCRET <aurelien.foucret@smile.fr>
+ * @copyright 2020 Smile
+ * @license   Open Software License ("OSL") v. 3.0
+ */
+
 namespace ProxiBlue\AutocompleteBestsellers\Model\Autocomplete\Product;
 
 use Magento\Search\Model\Autocomplete\DataProviderInterface;
