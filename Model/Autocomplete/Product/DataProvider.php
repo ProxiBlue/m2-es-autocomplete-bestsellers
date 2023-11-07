@@ -1,12 +1,19 @@
 <?php
 
+/*
+ * (c) Lucas van Staden <sales@proxiblue.com.au>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace ProxiBlue\AutocompleteBestsellers\Model\Autocomplete\Product;
 
 use Magento\Search\Model\Autocomplete\DataProviderInterface;
-use Smile\ElasticsuiteCatalog\Helper\Autocomplete as ConfigurationHelper;
 use ProxiBlue\AutocompleteBestsellers\Model\ResourceModel\Product\Fulltext\Collection as ProductCollection;
-use Smile\ElasticsuiteCore\Api\Search\ContextInterface;
+use Smile\ElasticsuiteCatalog\Helper\Autocomplete as ConfigurationHelper;
 use Smile\ElasticsuiteCatalog\Model\Autocomplete\Product\ItemFactory;
+use Smile\ElasticsuiteCore\Api\Search\ContextInterface;
 
 class DataProvider implements DataProviderInterface
 {

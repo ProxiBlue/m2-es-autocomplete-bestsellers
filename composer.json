@@ -1,6 +1,6 @@
 {
   "name": "proxi-blue/module-autocomplete-bestsellers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This module will sort ElasticSearch Autocomplete to bestsellers",
   "type": "magento2-module",
   "require": {
